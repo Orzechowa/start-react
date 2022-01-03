@@ -4,7 +4,7 @@ import { getCardsForSearchResults } from '../../redux/cardsRedux';
 
 const mapStateToProps = (state, props) => {
   return{
-    cards: getCardsForSearchResults(state, props.id),
+    cards: getCardsForSearchResults(state, props.match.params.id),
   };
 };
 
